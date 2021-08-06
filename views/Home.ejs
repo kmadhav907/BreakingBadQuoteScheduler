@@ -1,0 +1,23 @@
+<%-include('Header.ejs') %>
+
+<body>
+  <form method="POST" action="/" class="form-group">
+    <legend>ENTER YOUR EMAIL:</legend>
+
+    <input
+      type="text"
+      name="email"
+      class="form-control"
+      placeholder="Enter your Email"
+    />
+
+    <button type="submit">Submit</button>
+  </form>
+  <div>
+    <% if(error){%>
+    <h1><%= error %></h1>
+    <% } %>
+  </div>
+</body>
+
+<%-include('Footer.ejs') %>
