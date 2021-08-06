@@ -6,6 +6,8 @@ import connectDB from './Db.js';
 import { Email } from './EmailModel.js';
 import { isValid, sendEmail } from './operations.js';
 import cron from 'node-cron';
+import dotenv from 'dotenv';
+dotenv.config();
 
 const app = express();
 var error = '';
