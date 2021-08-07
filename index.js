@@ -64,3 +64,6 @@ const scheduleMail = async () => {
     }
   });
 };
+cron.schedule('0 10 * * 0', () => {
+  scheduleMail();
+});
